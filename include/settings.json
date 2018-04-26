@@ -1,0 +1,68 @@
+{
+	"parameters": {
+		"synthetic": {
+			"start_point": 100,
+			"lambda": 0.99,
+			"depth": 100,
+			"look_buffer": 100,
+			"dynamism_discount_type": "exponential",
+			"dynamism_discount": 0.9,
+			"markov_dependency_switch": "111",
+			"number_of_dependencies_considered": 4,
+			"moving_window_size": 100,
+			"min_peak_distance": 500,
+			"min_peak_height": 0.05,
+			"entropy_threshold": 0.7,
+			"model_error_threshold": 0.1
+		},
+		"rl": {
+			"start_point": 100,
+			"lambda_max": 0.99,
+			"lambda_min": 0.95,
+			"lambda_discount_rate": 0.9999,
+			"depth": 10,
+			"look_buffer": 10,
+			"dynamism_discount_type": "exponential",
+			"dynamism_discount": 0.95,
+			"markov_dependency_switch": "111",
+			"number_of_dependencies_considered": 4,
+			"moving_window_size": 50,
+			"min_peak_distance": 500,
+			"min_peak_height": 0.1,
+			"entropy_threshold": 3.0,
+			"model_error_threshold": 0.3,
+			"model_parameter_type": "mp"
+		},
+		"demonstrator": {
+			"start_point": 500,
+			"lambda": 0.99,
+			"depth": 300,
+			"look_buffer": 300,
+			"dynamism_discount_type": "exponential",
+			"dynamism_discount": 0.999,
+			"markov_dependency_switch": "111",
+			"number_of_dependencies_considered": 50,
+			"moving_window_size": 100,
+			"min_peak_distance": 200,
+			"min_peak_height": 0.1,
+			"entropy_threshold": 0.7,
+			"model_error_threshold": 0.1
+		}
+	},
+	"parameter_set_to_use": "rl",
+	"send_acknowledgements": true,
+	"acknowledgement_type": "model_id",
+	"what_to_log": {
+		"input_sequence": false,
+		"joint_probabilities": false,
+		"markov_probabilities": false,
+		"dynamism_scores": false,
+		"AOLN": false,
+		"change_scores": true,
+		"change_points": false,
+		"entropy_values": false,
+		"regime_markov_models": true,
+		"regime_errors": true,
+		"debug_log": true
+	}
+}

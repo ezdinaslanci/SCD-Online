@@ -47,7 +47,3 @@ The result of dynamism amplification process is subjected to discounting in orde
 dynamismDiscountType = {"none", "linear", "exponential"}
 
 dynamismDiscount = {DONT_CARE, endPoint, factor}
-
-### Who do I talk to? ###
-
-Developers: coskunkut (https://bitbucket.org/coskunkut) & ezdinaslanci (https://bitbucket.org/ezdinaslanci)
